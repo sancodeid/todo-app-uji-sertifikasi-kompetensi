@@ -4,7 +4,7 @@ export const saveUser = (username, email, password) => {
 };
 
 export const getUser = () => {
-  return JSON.parse(localStorage.getItem("user"));
+  return JSON.parse(localStorage.getItem("user")) || [];
 };
 
 export const logOut = () => {
