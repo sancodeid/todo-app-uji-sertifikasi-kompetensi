@@ -9,6 +9,7 @@
 
   .menu-container {
     width: 200px;
+    position: relative;
     border-radius: 10px;
     border: 2px solid black;
     background-color: #fff;
@@ -41,6 +42,7 @@
 
   .menu-container {
     width: 200px;
+    position: relative;
     border-radius: 10px;
     border: 2px solid black;
     background-color: #fff;
