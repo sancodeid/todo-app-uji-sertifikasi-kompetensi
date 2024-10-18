@@ -1,17 +1,31 @@
-// import React, { useState } from "react";
 import "./home.css";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/header/Navbar";
+import { useEffect, useState } from "react";
+import { getUser } from "../utils/authUtils";
 
 const Home = () => {
   const navigate = useNavigate();
+  const [isLogin, setIsLogin] = useState(false);
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const currentUser = getUser();
+    setUser(currentUser);
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
+    setIsLogin(!!isLoggedIn);
+  }, []);
+
+  const handleNavigation = (routeForLoggedIn, routeForLoggedOut) => {
+    navigate(isLogin ? routeForLoggedIn : routeForLoggedOut);
+  };
 
   return (
     <>
       <Navbar />
       <div className="home">
         <div className="main-home-title">
-          <h1>Selamat datang di SanNotes.</h1>
+          <h1>Selamat datang {isLogin ? user?.username : "di SanNotes."}</h1>
         </div>
         <div className="home-title">
           <h1>Make your plan</h1>
@@ -20,18 +34,21 @@ const Home = () => {
         <div className="home-desc">
           <p>
             Tingkatkan produktifitas kamu, rencanakan kegiatan harianmu dengan{" "}
-            <b>SanNotes</b>, Ayo mulai sekarang
+            <b>SanNotes</b>, Ayo {isLogin ? "lihat tugasmu." : "mulai sekarang."}
           </p>
         </div>
         <div className="start-option">
-          <button onClick={() => navigate("/login")} className="login-btn">
-            Mulai Sekarang
+          <button
+            onClick={() => handleNavigation("/todos", "/login")}
+            className="login-btn"
+          >
+            {isLogin ? "Lihat Tugas" : "Mulai Sekarang"}
           </button>
           <button
-            onClick={() => navigate("/register")}
+            onClick={() => handleNavigation("/profile", "/register")}
             className="register-btn"
           >
-            Daftar Sekarang
+            {isLogin ? "Lihat Profil" : "Daftar Sekarang"}
           </button>
         </div>
       </div>
