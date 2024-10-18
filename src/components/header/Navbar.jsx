@@ -24,6 +24,7 @@ const Menu = () => {
     const handleLogout = () => {
         logOut();
         navigate("/");
+        navigate(0);
     };
 
     return (
