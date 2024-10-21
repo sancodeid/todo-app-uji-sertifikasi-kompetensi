@@ -63,4 +63,4 @@ Aplikasi TodoList adalah aplikasi web sederhana dan fungsional untuk mengelola t
 
 1. Clone repositori ini:
    ```bash
-   git clone https://github.com/sancodeid/todolist-app.git
+   git clone https://github.com/sancodeid/todo-app-uji-sertifikasi-kompetensi.git
