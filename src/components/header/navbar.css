@@ -26,7 +26,7 @@
   .menu-off {
     opacity: 0;
     position: absolute;
-    top: -100px;
+    top: -300px;
     right: 80px;
     transition: all 0.3s ease;
   }
@@ -59,7 +59,7 @@
   .menu-off {
     opacity: 0;
     position: absolute;
-    top: -100px;
+    top: -300px;
     right: 40px;
     transition: all 0.2s ease;
   }
