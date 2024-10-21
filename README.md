@@ -1,66 +1,66 @@
-# TodoList App
+# Aplikasi TodoList
 
-TodoList App is a simple and functional web application for managing daily tasks. The application allows users to register, log in, add todos, edit and delete tasks, and mark tasks as completed.
+Aplikasi TodoList adalah aplikasi web sederhana dan fungsional untuk mengelola tugas sehari-hari. Aplikasi ini memungkinkan pengguna untuk mendaftar, login, menambahkan todo, mengedit dan menghapus tugas, serta menandai tugas yang sudah selesai.
 
-## Features
+## Fitur
 
-### 1. Home Page
+### 1. Halaman Home
 - **Navbar**
-  - Menu navigation: Todos, Profile, Home, Log Out (visible if logged in)
-- **Introduction Section**
-  - Title and a brief description of the application
-- **Buttons**
-  - `Mulai`: Redirects to login page
-  - `Daftar`: Redirects to registration page
+  - Menu navigasi: Todos, Profile, Home, Log Out (terlihat jika sudah login)
+- **Bagian Pengenalan**
+  - Judul dan deskripsi singkat tentang aplikasi
+- **Tombol**
+  - `Mulai`: Mengarahkan ke halaman login
+  - `Daftar`: Mengarahkan ke halaman pendaftaran
 
-### 2. Register Page
-- **Input Fields**
-  - Username, Email, and Password
-- **Password Toggle**
-  - Show/Hide password option
-- **Form Validation**
-  - Required fields: Username, Email, and Password
-- **Button**
-  - `Register`: Submits registration form
-- **Login Option**
-  - Redirect to login page if the user already has an account
+### 2. Halaman Register
+- **Field Input**
+  - Username, Email, dan Password
+- **Tombol Toggle Password**
+  - Pilihan untuk menampilkan/menyembunyikan password
+- **Validasi Form**
+  - Field yang wajib diisi: Username, Email, dan Password
+- **Tombol**
+  - `Register`: Mengirimkan form pendaftaran
+- **Pilihan Login**
+  - Arahkan ke halaman login jika pengguna sudah memiliki akun
 
-### 3. Login Page
-- **Input Fields**
-  - Username and Password
-- **Password Toggle**
-  - Show/Hide password option
-- **Basic Validation**
-  - Validates if both fields are filled
-- **Button**
-  - `Login`: Submits login form
+### 3. Halaman Login
+- **Field Input**
+  - Username dan Password
+- **Tombol Toggle Password**
+  - Pilihan untuk menampilkan/menyembunyikan password
+- **Validasi Sederhana**
+  - Memeriksa apakah semua field telah diisi
+- **Tombol**
+  - `Login`: Mengirimkan form login
 
-### 4. Todos Page
-- **Title**: Displays the page title
-- **Add Todos**
-  - Input field to add new todos
-- **Task List**
-  - Displays the list of todos
-- **Buttons**
-  - `Edit`: Edit a specific todo
-  - `Delete`: Remove a specific todo
-  - `Toggle Complete`: Mark a task as completed or incomplete
+### 4. Halaman Todos
+- **Judul**: Menampilkan judul halaman
+- **Input Todos**
+  - Field input untuk menambahkan tugas baru
+- **Daftar Tugas**
+  - Menampilkan daftar todos
+- **Tombol**
+  - `Edit`: Mengedit tugas tertentu
+  - `Delete`: Menghapus tugas tertentu
+  - `Tandai Selesai`: Menandai tugas sebagai selesai atau belum selesai
 
-### 5. Profile Page
-- **Title**: Displays page title
-- **Greeting Section**
-  - Greets the user by their username
-- **User Email**
-  - Displays the logged-in user's email
+### 5. Halaman Profile
+- **Judul**: Menampilkan judul halaman
+- **Bagian Sapaan**
+  - Menyapa pengguna dengan username mereka
+- **Email Pengguna**
+  - Menampilkan email pengguna yang sedang login
 
 ### 6. Log Out
-- **Redirect**
-  - Logs out the user and redirects to the home page
-- **Session Management**
-  - Clears login status
+- **Pengalihan**
+  - Mengeluarkan pengguna dan mengarahkan ke halaman home
+- **Manajemen Sesi**
+  - Menghapus status login
 
-## Installation
+## Instalasi
 
-1. Clone the repository:
+1. Clone repositori ini:
    ```bash
-   git clone https://github.com/your-username/todolist-app.git
+   git clone https://github.com/username-anda/todolist-app.git
